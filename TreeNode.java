@@ -77,6 +77,22 @@ public class TreeNode {
       System.out.print(data + ", ");
    }
 
+   public int min() {
+      if (left == null) {
+         return data;
+      }
+      else {
+         return left.min();
+      }
+   }
 
+   public int max() {
+      if (right == null) {
+         return data;
+      }
+      else {
+         return right.max();
+      }
+   }
 
 }

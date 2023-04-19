@@ -2,7 +2,7 @@ public class Demo {
 
    public static void main(String[] args) {
       
-      int[] arr = {15, 5, 2, 7, 23, 20, 29};
+      int[] arr = {25, 20, 22, 15, 17, 27, 30, 26, 32, 29};
 
       System.out.println("banyak elemen data: " + arr.length);
       System.out.println("data: ");
@@ -42,6 +42,12 @@ public class Demo {
       bst.traverseLevelOrder();
       System.out.println();
 
+      // apa data root ? 
+      System.out.println("root elemen: " + bst.getRoot());
+      // apa data terkecil ? 
+      System.out.println("minimum value: " + bst.minValue());
+      // apa data terbesar ? 
+      System.out.println("maximum value: " + bst.maxValue());
 
 
    }

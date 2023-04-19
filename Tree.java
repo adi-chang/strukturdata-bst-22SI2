@@ -6,6 +6,10 @@ public class Tree {
       root = null;
    }
 
+   public TreeNode getRoot() {
+      return root;
+   }
+
    public void insert(int value) {
       if (root == null) {
          root = new TreeNode(value);
@@ -61,6 +65,18 @@ public class Tree {
       for (int i = 1; i <= h; i++) {
          printCurrentLevel(root, i);
       }
+   }
+
+   public int minValue() {
+      if (root != null) 
+         return root.min();
+      return -1; // jika tree nya empty
+   }
+
+   public int maxValue() {
+      if (root != null) 
+         return root.max();
+      return -1; // jika tree nya empty
    }
 
 }
